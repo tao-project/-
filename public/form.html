@@ -1,0 +1,70 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-10-16 19:31:56
+ * @LastEditTime: 2020-10-16 22:48:44
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \map\views\form.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    div {
+        width: 500px;
+        height: 400px;
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 15px;
+        background: grey;
+    }
+
+    div p {
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        padding: 0px;
+        width: 100%;
+        height: 40px;
+        outline: none;
+        line-height: 40px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        margin-top: 10px;
+        font-size: 20px;
+        border: 1px solid greenyellow;
+    }
+</style>
+
+<body>
+    <div>
+        <p>这是修改页面</p>
+        <form action="/modify" method="POST">
+            <span>经度:</span> <input type="text" name='longitude'>
+            <span>纬度:</span><input type="text" name='latitude'>
+            <span>地址：</span> <input type="text" name='address'>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.addInfor {
+    display: block;
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background: #808080;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*正常的未被访问过的链接*/
+a .addInfor:link {
+    text-decoration: none;
+}
+
+/*已经访问过的链接*/
+a .addInfor:visited {
+    text-decoration: none;
+}
+
+/*鼠标划过(停留)的链接*/
+a.addInfor:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* 正在点击的链接*/
+a.addInfor:active {
+    text-decoration: none;
+}
+
+.nav {
+    margin: 0;
+}
